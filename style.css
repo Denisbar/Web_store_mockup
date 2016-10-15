@@ -1,0 +1,370 @@
+/*Слайдер*/
+#slideshow {
+    height: 350px;
+    margin: 60px auto 0;
+    position: relative;
+    width: 1000px;
+
+}
+
+#slideshow ul {
+    height: 320px;
+    left: 10px;
+    list-style: none outside none;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    width: 1000px;
+}
+
+#slideshow li {
+    position: static;
+    display: none;
+    z-index: 10;
+}
+
+#slideshow li:first-child {
+    display: block;
+    z-index: 1000;
+}
+
+#slideshow .slideActive {
+    z-index: 1000;
+}
+
+#slideshow canvas {
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+#slideshow .arrow {
+    height: 86px;
+    width: 60px;
+    position: absolute;
+    background: url('img/arrows.png') no-repeat;
+    top: 50%;
+    margin-top: -43px;
+    cursor: pointer;
+    z-index: 5000;
+}
+
+#slideshow .previous {
+    background-position: left top;
+    left: 0;
+}
+
+#slideshow .previous:hover {
+    background-position: left bottom;
+}
+
+#slideshow .next {
+    background-position: right top;
+    right: 0;
+}
+
+#slideshow .next:hover {
+    background-position: right bottom;
+}
+
+.slider {
+    padding-top: 250px;
+}
+
+#s {
+    position: absolute;
+    z-index: 1;
+}
+
+#d {
+    position: absolute;
+}
+
+/*end of slider*/
+
+/* Container */
+body {
+    background-color: #f0f0f0;
+}
+
+#container {
+    background-color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 1000px;
+}
+
+#top_menu ul li a {
+    color: #989898;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+#top_menu {
+    background: url("/citrus/img/topmenu.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    height: 69px;
+    margin-bottom: -10px;
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    width: 1000px;
+    z-index: 999;
+    box-shadow: 0px 10px 4px -4px rgba(0, 0, 0, .2); /* Параметры тени */
+
+}
+
+#top_menu ul {
+    margin-top: 25px;
+    padding-left: 200px;
+}
+
+#top_menu ul li {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0 8px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+#top_menu ul li a:hover {
+    color: #54575b;
+    transition: all 0.3s ease 0s;
+}
+
+#top_menu ul li a.active {
+    text-decoration: underline;
+}
+
+#top_menu .mbuy {
+    margin: 11px 30px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#top_menu .mbuy:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+
+#top_menu .mbuy:active {
+    margin-top: 21px;
+}
+
+#top_menu .mlogo {
+    left: 0;
+    margin: 27px 0 0 30px;
+    position: absolute;
+    top: 0;
+}
+
+.tit_h {
+    color: #000;
+    font-family: Ubuntu !important;
+    font-size: 30px;
+    text-align: left;
+}
+
+.left {
+    float: left;
+}
+
+.mk {
+    color: #4a4a4a;
+    font-size: 14px;
+    padding: 40px 60px;
+}
+
+#block2 {
+    line-height: 1.3em;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+#block2 .ctr {
+    padding: 0 215px;
+}
+
+#block2 p {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+#block2 .left {
+    text-align: center;
+    width: 200px;
+}
+
+#block2 .left img {
+    max-width: 100%;
+}
+
+.nalich {
+    color: #8cc253;
+    font: bold;
+    font-weight: 900;
+}
+
+table {
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+}
+
+td, th {
+    /*border: 1px solid black;*/
+    /* Параметры рамки */
+}
+
+#buy_block1 {
+    padding-top: 35px;
+}
+
+.cdtb {
+    font-size: small;
+    color: #9b9bbc;
+}
+
+.bdt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dbk {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #484748;
+}
+
+.trrt {
+    font-weight: 900;
+    color: #484748;
+}
+
+.bras {
+    color: #484748;
+}
+
+.odessa {
+    font-weight: 900;
+}
+
+#link_odessa {
+    color: #8cc253;
+    text-decoration: underline;
+    -moz-text-decoration-style: dashed;
+}
+
+#center_vidachi {
+    color: #8cc253;
+    text-decoration: underline;
+    -moz-text-decoration-style: dashed;
+}
+
+#internet_cena {
+    color: #ff7834;
+}
+
+.tovar_credit_1 {
+    color: #529103;
+}
+
+.tovar_beznal_1 {
+    padding-top: 10px;
+    color: #484748;
+}
+
+.tovar_buy_button_31 {
+    font-size: x-large;
+    color: #484748;
+}
+
+.tovar_buy_button_311 {
+    font-size: medium;
+    vertical-align: super;
+    color: #484748;
+}
+
+#kupit_bistro {
+    padding-top: 15px;
+    color: #5b5b5b;
+}
+
+#nomer_telefona {
+    color: #5b5b5b;
+    text-decoration: underline;
+    -moz-text-decoration-style: dashed;
+}
+
+#one1 {
+    text-decoration: underline;
+    -moz-text-decoration-style: dashed;
+    color: #508b16;
+    font-weight: 900;
+}
+
+.one_klik {
+    padding-top: 15px;
+}
+
+.haracteristic {
+    margin: 15px;
+    padding-left: 60px;
+
+}
+
+#appstore {
+    padding-bottom: 5px;
+}
+
+#appstorelist {
+    padding-top: 10px;
+    padding-left: 9px;
+}
+
+#ska {
+    font-weight: 900;
+    color: #236cb1;
+    padding-left: 64px;
+}
+
+#sku {
+    font-weight: 900;
+    color: #236cb1;
+    padding-left: 132px;
+}
+
+#table42 {
+    padding-left: 60px;
+}
+
+.nast {
+    padding-top: 45px;
+}
+
+#photo {
+    padding-left: 60px;
+    padding-top: 25px;
+}
+
+#table423 {
+    padding-left: 70px;
+    padding-top: 50px;
+}
+
+#ot {
+    color: #777777;
+    font-size: small;
+
+}
+
+#bib {
+    font-size: xx-large;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.leftt {
+    padding-left: 925px;
+    color: #55b20f;
+}
